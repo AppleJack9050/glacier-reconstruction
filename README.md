@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)](#)
 [![Version](https://img.shields.io/badge/version-0.1.0-orange)](#)
 
-<img src="ace0.png" width="320"/>
-<img src="colmap.png" width="320"/>
-<img src="openmvg.png" width="320"/>
+<img src="ace0.png" width="100"/>
+<img src="colmap.png" width="100"/>
+<img src="openmvg.png" width="100"/>
 
 ## 3D Glacier Reconstruction in Challenging Environments: A Comparative Study of Traditional and Deep Learning Approaches
 sicheng.zhao@ucdconnect.ie, yuan.liang@ucdconnect.ie, abey.campbell@ucd.ie, soumyabrata.dev@ucd.ie
