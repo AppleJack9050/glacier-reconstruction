@@ -15,26 +15,15 @@ sicheng.zhao@ucdconnect.ie, yuan.liang@ucdconnect.ie, abey.campbell@ucd.ie, soum
 
 ## 🚀 Table of Contents
 
-1. [About](#about)  
-2. [Features](#features)  
-3. [Getting Started](#getting-started)  
+1. [Setup](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
-4. [Evaluation](#evaluation)  
-5. [Authors & Acknowledgments](#authors--acknowledgments)  
+2. [Dataset Download](#dataset-download)
+3. [Run the Experiment](#run-the-experiment)
+3. [Evaluation](#evaluation)  
+4. [Authors & Acknowledgments](#authors--acknowledgments)  
 
----
-
-## 📝 About
-
-A few paragraphs describing the project:
-- What problem does it solve?
-- Who is it for?
-- Any high-level design or tech choices worth calling out?
-
----
-
-## ⚙️ Getting Started
+## ⚙️ Setup
 
 ### Prerequisites
 - Linux
@@ -57,7 +46,7 @@ Related Project:
 ### Dataset Download
 Glacier dataset: is available at https://tls.unavco.org/projects/B-425/PS06/SV02/.
 
-### Run the experiment
+### Run the Experiment
 ```bash
 # activate env
 conda activate ace0
@@ -70,15 +59,15 @@ Note: "$Data_Path" should include *.JPG wildcard at the end, for example "/home/
 ### Evaluation
 #### Chamfer Distance
 ```bash
-python compute_chamfer.py \
-  --source /path/to/ace0_trans.ply \
-  --target /path/to/gt_gl.ply \
-  --output losses.txt
+python align_and_chamfer.py \
+  --src /path/to/ace0_trans.ply \
+  --tgt /path/to/gt_gl.ply \
+  --out output.txt
 ```
+Note: 
+- align_and_chamfer.py is stored in evaluation folder.
+- Make sure path is .ply file.
 
-```bash
-
-```
 
 # Authors--acknowledgments
 SiCheng Zhao (sicheng.zhao@ucdconnect.ie) Ph.D. Scholar – University College Dublin  
